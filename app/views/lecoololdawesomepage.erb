@@ -1,0 +1,12 @@
+<div id="onlyone">
+  <h1>Horray! Your're real!</h1>
+  <% if @user %>
+  <table>
+    <tr><td><%= @user.name %></td></tr>
+    <tr><td><%= @user.email %></td></tr>
+  </table>
+  <form action="/logout" method="get">
+    <input type="submit" value="Log Out!">
+  </form>
+  <% end %>
+</div>
